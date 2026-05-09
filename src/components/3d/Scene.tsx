@@ -31,7 +31,6 @@ export default function Scene() {
         {/* Interactive wrapper for mouse movement parallax */}
         <PresentationControls
           global
-          config={{ mass: 2, tension: 500 }}
           snap={true}
           rotation={[0, 0.3, 0]}
           polar={[-Math.PI / 3, Math.PI / 3]}
