@@ -19,11 +19,11 @@ export default function Particles() {
   return (
     <group ref={groupRef}>
       {/* Background stars for depth */}
-      <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
+      <Stars radius={100} depth={50} count={1500} factor={4} saturation={0} fade speed={1} />
       
       {/* Floating particles (dust/sparkles effect) around the main object */}
       <Sparkles 
-        count={200} 
+        count={100} 
         scale={12} 
         size={2} 
         speed={0.4} 
@@ -31,7 +31,7 @@ export default function Particles() {
         color="#00d2ff" // Blue neon
       />
       <Sparkles 
-        count={100} 
+        count={50} 
         scale={15} 
         size={4} 
         speed={0.2} 

@@ -6,23 +6,23 @@ import { Search, PenTool, Rocket, TrendingUp } from "lucide-react";
 const steps = [
   {
     icon: <Search className="w-6 h-6 text-white" />,
-    title: "1. Estrategia & Auditoría",
-    desc: "Analizamos tu mercado, competencia y embudos actuales para encontrar los agujeros de dinero.",
+    title: "1. Contacto Inicial",
+    desc: "Nos comunicamos contigo para entender tu idea, startup o empresa tecnológica.",
   },
   {
     icon: <PenTool className="w-6 h-6 text-white" />,
-    title: "2. Creatividad & Copy",
-    desc: "Diseñamos ángulos de marketing irresistibles y creatividades visuales que capturan atención al instante.",
+    title: "2. Evaluación y Mentoría",
+    desc: "Nuestra red de coaches analiza tu proyecto y te guía para perfeccionar el modelo de negocio.",
   },
   {
     icon: <Rocket className="w-6 h-6 text-white" />,
-    title: "3. Lanzamiento Técnico",
-    desc: "Configuramos campañas algorítmicas en Meta/TikTok con tracking preciso y machine learning.",
+    title: "3. Membresía y Sinergia",
+    desc: "Te unes oficialmente a la comunidad Parquesoft y conectas con otros emprendedores y aliados.",
   },
   {
     icon: <TrendingUp className="w-6 h-6 text-white" />,
-    title: "4. Escalamiento Bruto",
-    desc: "Aumentamos el presupuesto en las campañas ganadoras para multiplicar tu facturación rápidamente.",
+    title: "4. Escalamiento e Impacto",
+    desc: "Tu proyecto se expande a nivel nacional e internacional apoyado por el Cluster Tecnológico.",
   },
 ];
 
@@ -33,10 +33,10 @@ export default function ProcessSection() {
         <RevealOnScroll>
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-              El Framework <span className="text-gradient">NEXORA</span>
+              Únete al <span className="text-gradient">Ecosistema</span>
             </h2>
             <p className="text-xl text-gray-400 mx-auto">
-              Un sistema probado y metódico para escalar negocios de 6 a 7 cifras. Sin excusas.
+              El proceso para ser parte de la comunidad de Parquesoft Sincelejo y llevar tu proyecto al siguiente nivel.
             </p>
           </div>
         </RevealOnScroll>

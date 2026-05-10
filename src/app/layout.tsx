@@ -18,8 +18,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "NEXORA | Premium Digital Marketing Agency",
-  description: "Convertimos marcas en máquinas de ventas. Escalamos negocios mediante estrategias virales, branding premium y publicidad de alto rendimiento.",
+  title: "Parquesoft Sincelejo | Cluster Tecnológico",
+  description: "La comunidad de emprendimiento y tecnología más grande. Innovación, desarrollo de software y red de coaches.",
 };
 
 export default function RootLayout({

@@ -5,34 +5,34 @@ import RevealOnScroll from "../animations/RevealOnScroll";
 
 const services = [
   {
-    icon: <Smartphone className="w-8 h-8 text-purple-neon" />,
-    title: "TikTok Ads",
-    description: "Creatividades virales y segmentación algorítmica para escalar tu ROAS a niveles absurdos.",
+    icon: <Code2 className="w-8 h-8 text-purple-neon" />,
+    title: "Desarrollo de Software y Apps",
+    description: "Creamos soluciones a la medida, vanguardistas y de alta calidad para resolver retos complejos.",
   },
   {
     icon: <Target className="w-8 h-8 text-blue-neon" />,
-    title: "Meta Ads",
-    description: "Sistemas de adquisición de clientes ultra-optimizados y basados en machine learning.",
+    title: "Cluster Tecnológico",
+    description: "Sinergia entre empresas de base tecnológica para generar una oferta de valor integral.",
   },
   {
     icon: <Sparkles className="w-8 h-8 text-yellow-400" />,
-    title: "Branding",
-    description: "Identidad visual premium que posiciona a tu marca como la única opción en tu mercado.",
+    title: "Innovación y Emprendimiento",
+    description: "Apoyo continuo a nuevas iniciativas tecnológicas en un ecosistema de crecimiento acelerado.",
   },
   {
-    icon: <Code2 className="w-8 h-8 text-green-400" />,
-    title: "Diseño Web",
-    description: "Landing pages y e-commerces futuristas diseñados estrictamente para maximizar conversiones.",
+    icon: <Bot className="w-8 h-8 text-green-400" />,
+    title: "Red de Mentores y Coaches",
+    description: "Acompañamiento del más alto nivel con expertos para escalar tu modelo de negocio.",
   },
   {
-    icon: <Bot className="w-8 h-8 text-pink-500" />,
-    title: "Automatización IA",
-    description: "Implementación de agentes de IA para atención al cliente y optimización de embudos 24/7.",
+    icon: <Smartphone className="w-8 h-8 text-pink-500" />,
+    title: "Comunidad Activa",
+    description: "Conexión constante entre emprendedores, inversores y talento en Sincelejo y Colombia.",
   },
   {
     icon: <Video className="w-8 h-8 text-orange-400" />,
-    title: "Producción UGC",
-    description: "Contenido orgánico estilo reel/tiktok generado por creadores para conectar con tu audiencia.",
+    title: "Fábricas de Productividad",
+    description: "Programas de optimización y vouchers de conocimiento para acelerar la transformación digital.",
   },
 ];
 
@@ -45,10 +45,10 @@ export default function ServicesSection() {
         <RevealOnScroll>
           <div className="mb-20">
             <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-              Nuestros <span className="text-gradient">Servicios</span>
+              Nuestra <span className="text-gradient">Propuesta</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl">
-              No hacemos marketing tradicional. Construimos ecosistemas digitales diseñados para dominar la atención y multiplicar ingresos.
+              Parquesoft es un ecosistema multi-sectorial de servicios TI, impulsando empresas de base tecnológica que trabajan juntas para generar impacto real.
             </p>
           </div>
         </RevealOnScroll>

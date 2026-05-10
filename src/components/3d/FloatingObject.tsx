@@ -27,8 +27,8 @@ export default function FloatingObject() {
   return (
     <Float speed={2} rotationIntensity={1} floatIntensity={2}>
       <mesh ref={meshRef} castShadow receiveShadow>
-        {/* TorusKnot Geometry for a premium abstract look */}
-        <torusKnotGeometry args={[1.5, 0.4, 256, 64]} />
+        {/* TorusKnot Geometry for a premium abstract look (optimized segments) */}
+        <torusKnotGeometry args={[1.5, 0.4, 128, 32]} />
         
         {/* Glass-like premium material */}
         <MeshTransmissionMaterial
@@ -40,6 +40,7 @@ export default function FloatingObject() {
           ior={1.5}
           chromaticAberration={1}
           anisotropy={0.3}
+          resolution={128} // Lower resolution for better performance on glass refractions
           color="#8a2be2" // Purple neon tint
         />
       </mesh>

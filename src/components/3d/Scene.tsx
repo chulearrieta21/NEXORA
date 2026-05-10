@@ -1,11 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment, PresentationControls } from "@react-three/drei";
+import { Environment, PresentationControls, PerformanceMonitor } from "@react-three/drei";
 import FloatingObject from "./FloatingObject";
 import Particles from "./Particles";
 
 export default function Scene() {
+  const [dpr, setDpr] = useState<[number, number]>([1, 1.5]); // Lower initial max dpr
+
   return (
     <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
       {/* Canvas for 3D rendering. Pointer events auto allows interaction with 3D objects if needed, 
@@ -14,9 +17,10 @@ export default function Scene() {
       <Canvas
         camera={{ position: [0, 0, 8], fov: 45 }}
         style={{ pointerEvents: "auto" }} // Allow dragging the 3D object
-        dpr={[1, 2]} // High DPI support
+        dpr={dpr} // Dynamic High DPI support
         gl={{ powerPreference: "high-performance", antialias: false, preserveDrawingBuffer: true }}
       >
+        <PerformanceMonitor onIncline={() => setDpr([1, 2])} onDecline={() => setDpr([1, 1])} />
         {/* Lighting */}
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} color="#00d2ff" />

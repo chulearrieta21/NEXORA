@@ -6,26 +6,26 @@ import { ArrowUpRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    client: "Lumina Beauty",
-    metric: "+450%",
-    metricLabel: "Incremento en Ventas",
-    tag: "TikTok Ads & UGC",
+    client: "SucreInnova",
+    metric: "+50",
+    metricLabel: "Empresarios Viabilizados",
+    tag: "Proyecto de Inversión",
     imageGrad: "from-purple-900/40 to-black",
   },
   {
     id: 2,
-    client: "AeroTech Drones",
-    metric: "$2.4M",
-    metricLabel: "Ingresos Generados",
-    tag: "Meta Ads & Web",
+    client: "Fábricas de Productividad",
+    metric: "100%",
+    metricLabel: "Acompañamiento",
+    tag: "Programa",
     imageGrad: "from-blue-900/40 to-black",
   },
   {
     id: 3,
-    client: "Zenith Fitness",
-    metric: "1.2M",
-    metricLabel: "Nuevos Seguidores",
-    tag: "Branding Viral",
+    client: "Váucher de Conocimiento",
+    metric: "Top",
+    metricLabel: "Resultados en Entorno",
+    tag: "Innovación",
     imageGrad: "from-emerald-900/40 to-black",
   },
 ];
@@ -38,14 +38,14 @@ export default function PortfolioSection() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
             <div>
               <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Casos de <span className="text-gradient">Éxito</span>
+                Nuestros <span className="text-gradient">Proyectos</span>
               </h2>
               <p className="text-xl text-gray-400 max-w-xl">
-                Los números no mienten. Transformamos presupuestos publicitarios en rentabilidad escalable.
+                Los resultados de nuestro impacto en la región. Trabajamos con aliados para fortalecer el tejido empresarial.
               </p>
             </div>
             <button className="flex items-center gap-2 text-white font-semibold hover:text-blue-neon transition-colors pb-2 border-b border-white/20 hover:border-blue-neon">
-              Ver todos los casos <ArrowUpRight size={20} />
+              Ver todos los proyectos <ArrowUpRight size={20} />
             </button>
           </div>
         </RevealOnScroll>

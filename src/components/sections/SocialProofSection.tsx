@@ -10,7 +10,7 @@ const metrics = [
   { value: "+5", label: "Años Experiencia" },
 ];
 
-const logos = ["VOGUE", "FORBES", "NIKE", "APPLE", "TESLA", "TIKTOK"];
+const logos = ["PARQUESOFT", "SINCELEJO", "TECNOLOGÍA", "APRENDIZAJE", "ROBÓTICA"];
 
 export default function SocialProofSection() {
   return (
@@ -18,7 +18,7 @@ export default function SocialProofSection() {
       <div className="container mx-auto px-6">
         <RevealOnScroll>
           <p className="text-center text-gray-500 text-sm font-semibold tracking-widest uppercase mb-12">
-            CONFIAN MARCAS LÍDERES A NIVEL GLOBAL
+            NUESTRO ECOSISTEMA TECNOLÓGICO
           </p>
         </RevealOnScroll>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Leaf } from "lucide-react";
 import { motion } from "framer-motion";
 
 const FlipperLink = ({ children, href }: { children: string; href: string }) => {
@@ -65,16 +65,21 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <div className="text-2xl font-heading font-bold text-white tracking-widest cursor-pointer">
-          NEX<span className="text-purple-neon">ORA</span>
+        <div className="cursor-pointer flex items-center gap-3">
+          <div className="bg-white/95 p-2 rounded-xl shadow-[0_0_15px_rgba(0,168,89,0.3)] flex items-center gap-2">
+            <img src="/parquesoft-logo-clean.png" alt="ParqueSoft" className="h-8 w-auto object-contain" />
+            <span className="text-gray-500 text-[0.7rem] font-black tracking-[0.2em] uppercase leading-none border-l-2 border-gray-300 pl-2">
+              Sincelejo
+            </span>
+          </div>
         </div>
 
         <nav className="hidden md:flex space-x-8 items-center">
           <FlipperLink href="#services">Servicios</FlipperLink>
-          <FlipperLink href="#portfolio">Portafolio</FlipperLink>
-          <FlipperLink href="#process">Proceso</FlipperLink>
+          <FlipperLink href="#portfolio">Proyectos</FlipperLink>
+          <FlipperLink href="#process">Comunidad</FlipperLink>
           <a href="#contact" className="bg-white text-black px-5 py-2 rounded-full font-semibold hover-glow text-sm">
-            Agendar Llamada
+            Únete a la Comunidad
           </a>
         </nav>
 
@@ -94,9 +99,9 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
         >
           <a href="#services" className="text-gray-300 text-lg" onClick={() => setMobileMenuOpen(false)}>Servicios</a>
-          <a href="#portfolio" className="text-gray-300 text-lg" onClick={() => setMobileMenuOpen(false)}>Portafolio</a>
-          <a href="#process" className="text-gray-300 text-lg" onClick={() => setMobileMenuOpen(false)}>Proceso</a>
-          <a href="#contact" className="text-blue-neon text-lg font-bold" onClick={() => setMobileMenuOpen(false)}>Agendar Llamada</a>
+          <a href="#portfolio" className="text-gray-300 text-lg" onClick={() => setMobileMenuOpen(false)}>Proyectos</a>
+          <a href="#process" className="text-gray-300 text-lg" onClick={() => setMobileMenuOpen(false)}>Comunidad</a>
+          <a href="#contact" className="text-blue-neon text-lg font-bold" onClick={() => setMobileMenuOpen(false)}>Únete a la Comunidad</a>
         </motion.div>
       )}
     </motion.header>

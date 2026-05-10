@@ -2,8 +2,8 @@
 
 @theme inline {
   --color-dark: #050505;
-  --color-purple-neon: #8a2be2;
-  --color-blue-neon: #00d2ff;
+  --color-purple-neon: #00A859;
+  --color-blue-neon: #8CC63F;
   --color-gray-dark: #111111;
   --font-sans: var(--font-inter);
   --font-heading: var(--font-poppins);
@@ -54,7 +54,7 @@ body {
   }
 
   .glow-effect {
-    box-shadow: 0 0 30px rgba(138, 43, 226, 0.3);
+    box-shadow: 0 0 30px rgba(0, 168, 89, 0.4);
   }
 
   .hover-glow {
@@ -62,7 +62,7 @@ body {
   }
 
   .hover-glow:hover {
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
+    box-shadow: 0 0 25px rgba(140, 198, 63, 0.4);
     transform: translateY(-5px);
   }
 }

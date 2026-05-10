@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Leaf } from "lucide-react";
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,14 +31,19 @@ export default function LoadingScreen() {
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
             />
-            <motion.h1
-              className="mt-6 text-3xl font-heading font-bold text-gradient tracking-widest"
+            <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
+              className="mt-8 flex flex-col items-center gap-4"
             >
-              NEXORA
-            </motion.h1>
+              <div className="bg-white/95 inline-flex items-center gap-4 p-4 rounded-3xl shadow-[0_0_40px_rgba(0,168,89,0.4)]">
+                <img src="/parquesoft-logo-clean.png" alt="ParqueSoft" className="h-12 w-auto object-contain" />
+                <span className="text-gray-500 text-[0.9rem] font-black tracking-[0.3em] uppercase leading-none border-l-2 border-gray-300 pl-4">
+                  Sincelejo
+                </span>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       )}

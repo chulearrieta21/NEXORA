@@ -5,21 +5,21 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Alex Rivera",
-    role: "CEO, Elevate E-commerce",
-    content: "Antes de Nexora estábamos atascados en $30k/mes. En 90 días nos llevaron a $120k con TikTok Ads. Su equipo creativo es de otro nivel, entienden exactamente qué hace que la gente compre.",
+    name: "Carlos Martínez",
+    role: "CEO, TechSucre Solutions",
+    content: "Gracias a la red de mentores de Parquesoft pudimos estructurar nuestro modelo de negocio y conseguir nuestra primera ronda de inversión ángel. El ecosistema es invaluable.",
     rating: 5,
   },
   {
-    name: "Sofia Mendez",
-    role: "Fundadora, Glow Cosmetics",
-    content: "La calidad visual y el branding que desarrollaron para nosotros hizo que pudiéramos subir nuestros precios un 40% sin perder conversión. Es la mejor inversión que hemos hecho.",
+    name: "Laura Gómez",
+    role: "Fundadora, AgroInnova",
+    content: "El programa de Fábricas de Productividad nos permitió optimizar nuestros procesos internos mediante tecnología que desarrollamos junto al Cluster Tecnológico.",
     rating: 5,
   },
   {
-    name: "David Chen",
-    role: "Director de Marketing, TechFlow",
-    content: "He trabajado con 5 agencias antes. Nexora es la única que realmente entiende de atribución de datos y escalamiento algorítmico. Su dashboard de resultados en tiempo real es increíble.",
+    name: "Andrés Silva",
+    role: "Director, EduTech Caribe",
+    content: "Pertenecer a la comunidad nos abrió las puertas a alianzas estratégicas que no hubiéramos logrado solos. La sinergia y el apoyo constante son increíbles.",
     rating: 5,
   },
 ];
